@@ -37,8 +37,13 @@ body {
     background-color:rgb(46, 46, 46);
     color: white;
     text-decoration: none;
+    border-radius: 8px;
 }
 
 #row1guess {
     background-color:rgb(0, 211, 0);
+}
+
+#row1letter1 {
+    /* transition:2s; */
 }
