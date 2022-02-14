@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 0.2rem;
+    align-items: center;
 }
 
 .letterBox {
@@ -35,4 +36,9 @@ body {
     text-transform:uppercase;
     background-color:rgb(46, 46, 46);
     color: white;
+    text-decoration: none;
+}
+
+#row1guess {
+    background-color:rgb(0, 211, 0);
 }

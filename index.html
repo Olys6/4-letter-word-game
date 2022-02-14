@@ -5,19 +5,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-<script type="text/typescript" src="app.ts"></script>
+<script src="https://kit.fontawesome.com/c1393db622.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 
-<h1>Gætte or Gissa</h1>
+<h1>Gætte</h1>
 <p>Guess the 4 letter word!</p>
 
 <div class="letterBoxContainer">
     <div class="row" id="guess1">
-        <input class="letterBox" id="row1letter" type="text" maxlength="1"></input>
-        <input class="letterBox" type="text" maxlength="1"></input>
-        <input class="letterBox" type="text" maxlength="1"></input>
-        <input class="letterBox" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row1letter1" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row1letter2" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row1letter3" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row1letter4" type="text" maxlength="1"></input>
+        <a type="button" class="letterBox" onClick="row1Guess()" id="row1guess" href="#">
+            ?
+        </a>
     </div>
     <div class="row" id="guess2">
         <input class="letterBox" type="text" maxlength="1"></input>
@@ -38,6 +42,5 @@
         <input class="letterBox" type="text" maxlength="1"></input>
     </div>
 </div>
-
 </body>
 </html> 
