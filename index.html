@@ -11,7 +11,9 @@
 <body>
 
 <h1>Gætte</h1>
-<p>Guess the 4 letter word!</p>
+<!-- <p>Guess the 4 letter word!</p> -->
+<p>If you get <span style="color: rgb(0, 211, 0)">██</span> it means that letter is in the word and in the correct position</p>
+<p>If you get <span style="color: rgb(255, 184, 53)">██</span> it means that letter is in the word but not in the right position</p>
 
 <div class="letterBoxContainer">
     <div class="row" id="guess1">
@@ -28,7 +30,7 @@
         <input class="letterBox" id="row2letter2" type="text" maxlength="1"></input>
         <input class="letterBox" id="row2letter3" type="text" maxlength="1"></input>
         <input class="letterBox" id="row2letter4" type="text" maxlength="1"></input>
-        <a type="button" class="letterBox" onClick="row2Guess()" id="row1guess" href="#">
+        <a type="button" class="letterBox" onClick="row2Guess()" id="row2guess" href="#">
             ?
         </a>
     </div>
@@ -37,20 +39,20 @@
         <input class="letterBox" id="row3letter2" type="text" maxlength="1"></input>
         <input class="letterBox" id="row3letter3" type="text" maxlength="1"></input>
         <input class="letterBox" id="row3letter4" type="text" maxlength="1"></input>
-        <a type="button" class="letterBox" onClick="row3Guess()" id="row1guess" href="#">
+        <a type="button" class="letterBox" onClick="row3Guess()" id="row3guess" href="#">
             ?
         </a>
     </div>
     <div class="row" id="guess4">
-        <input class="letterBox" id="row3letter1" type="text" maxlength="1"></input>
-        <input class="letterBox" id="row3letter2" type="text" maxlength="1"></input>
-        <input class="letterBox" id="row3letter3" type="text" maxlength="1"></input>
-        <input class="letterBox" id="row3letter4" type="text" maxlength="1"></input>
-        <a type="button" class="letterBox" onClick="row4Guess()" id="row1guess" href="#">
+        <input class="letterBox" id="row4letter1" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row4letter2" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row4letter3" type="text" maxlength="1"></input>
+        <input class="letterBox" id="row4letter4" type="text" maxlength="1"></input>
+        <a type="button" class="letterBox" onClick="row4Guess()" id="row4guess" href="#">
             ?
         </a>
     </div>
-    <a href="" style="color: white; text-decoration: none" >
+    <a href="" id="playAgainBtn" style="display: none; color: white; text-decoration: none" >
         <div style="font-size: 40px; padding: 10px; display: flex; justify-content: center; margin-top: 1rem; background-color: rgb(0, 211, 0); border-radius:5px; width: 100%;">
             Play Again
         </div>

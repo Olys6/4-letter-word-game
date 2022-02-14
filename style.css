@@ -41,9 +41,18 @@ body {
 }
 
 #row1guess {
-    /* background-color:rgb(0, 211, 0); */
+    transition: 1s;
 }
 
-#row1letter1 {
-    /* transition:2s; */
+#row2guess {
+    display:none;
+    transition: 1s;
+}
+
+#row3guess {
+    display: none;
+}
+
+#row4guess {
+    display: none;
 }

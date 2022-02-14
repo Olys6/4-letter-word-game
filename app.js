@@ -87,6 +87,9 @@ function row1Guess() {
             
         }
 
+        document.getElementById("row1guess").style.display = "none"
+        
+        document.getElementById("row2guess").style.display = "block"
         // console.log("RANDOM WORD: " + randomWord)
 
         // console.log("FILTERED: " + correctGuessesRow1)
@@ -171,6 +174,10 @@ function row2Guess() {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
             
         }
+
+        document.getElementById("row2guess").style.display = "none"
+        
+        document.getElementById("row3guess").style.display = "block"
         // console.log("RANDOM WORD: " + randomWord)
 
         // console.log("FILTERED: " + correctGuessesrow2)
@@ -255,6 +262,10 @@ function row3Guess() {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
             
         }
+
+        document.getElementById("row3guess").style.display = "none"
+        
+        document.getElementById("row4guess").style.display = "block"
         // console.log("RANDOM WORD: " + randomWord)
 
         // console.log("FILTERED: " + correctGuessesrow3)
@@ -339,6 +350,12 @@ function row4Guess() {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
             
         }
+
+        document.getElementById("row3guess").style.display = "none"
+        
+        document.getElementById("row4guess").style.display = "block"
+
+        document.getElementById("playAgainBtn").style.display = "block"
         // console.log("RANDOM WORD: " + randomWord)
 
         // console.log("FILTERED: " + correctGuessesrow4)
