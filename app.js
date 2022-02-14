@@ -364,6 +364,8 @@ function row4Guess() {
         document.getElementById("row4guess").style.display = "block"
 
         document.getElementById("playAgainBtn").style.display = "block"
+
+        document.getElementById("guessSubtitle").innerHTML = `The word was <span id="randomWord">${randomWord.join("")}</span>`
         // console.log("RANDOM WORD: " + randomWord)
 
         // console.log("FILTERED: " + correctGuessesrow4)
