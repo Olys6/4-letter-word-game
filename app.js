@@ -4,12 +4,20 @@ const words = [
     "base", "boat", "king", 
     "acid", "bird", "burn", 
     "camp", "bone", "down", 
-    "earn", "gift"
+    "earn", "gift", "nice",
+    "belt" , "case", "cash",
+    "chat", "club", "dark", 
+    "easy", "late", "fact",
+    "fate", "goal", "glad",
+    "girl", "grow", "join", 
+    "name", "next", "time", 
+    "true", "town", "warm",
+    "word", "year", "wire"
 ]
 
 const randomWord = words[Math.floor(Math.random() * words.length)].split("")
 
-console.log("RANDOM WORD: " + randomWord)
+// console.log("RANDOM WORD: " + randomWord)
 
 let row1guess = []
 
@@ -20,7 +28,7 @@ function row1Guess() {
     || document.getElementById("row1letter3").value === ""
     || document.getElementById("row1letter4").value === ""
     ) {
-        window.alert("YOU NEED TO FILL THE FIRST ROW WITH A WORD")
+        window.alert("Please fill the row with a word")
     } else {
         row1guess.push(document.getElementById("row1letter1").value)
         row1guess.push(document.getElementById("row1letter2").value)
@@ -42,7 +50,7 @@ function row1Guess() {
             }
         })
 
-        console.log("ROW 1 GUESS", row1guess)
+        // console.log("ROW 1 GUESS", row1guess)
 
         
         for(let i = 0; i < correctGuessesRow1.length; i++) {
@@ -84,7 +92,7 @@ function row1Guess() {
 
         if(correctGuessesRow1.join("") === randomWord.join("")) {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
-            
+            document.getElementById("playAgainBtn").style.display = "block"
         }
 
         document.getElementById("row1guess").style.display = "none"
@@ -106,7 +114,7 @@ function row2Guess() {
     || document.getElementById("row2letter3").value === ""
     || document.getElementById("row2letter4").value === ""
     ) {
-        window.alert("YOU NEED TO FILL THE FIRST ROW WITH A WORD")
+        window.alert("Please fill the row with a word")
     } else if(row1guess.length === 0) {
         window.alert("Please fill the previous row")
     } else {
@@ -130,7 +138,7 @@ function row2Guess() {
             }
         })
 
-        console.log("ROW 1 GUESS", row2guess)
+        // console.log("ROW 1 GUESS", row2guess)
 
         
         for(let i = 0; i < correctGuessesrow2.length; i++) {
@@ -172,7 +180,7 @@ function row2Guess() {
 
         if(correctGuessesrow2.join("") === randomWord.join("")) {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
-            
+            document.getElementById("playAgainBtn").style.display = "block"
         }
 
         document.getElementById("row2guess").style.display = "none"
@@ -194,7 +202,7 @@ function row3Guess() {
     || document.getElementById("row3letter3").value === ""
     || document.getElementById("row3letter4").value === ""
     ) {
-        window.alert("YOU NEED TO FILL THE FIRST ROW WITH A WORD")
+        window.alert("Please fill the row with a word")
     } else if(row1guess.length === 0) {
         window.alert("Please fill the previous rows")
     } else {
@@ -218,7 +226,7 @@ function row3Guess() {
             }
         })
 
-        console.log("ROW 1 GUESS", row3guess)
+        // console.log("ROW 1 GUESS", row3guess)
 
         
         for(let i = 0; i < correctGuessesrow3.length; i++) {
@@ -260,7 +268,7 @@ function row3Guess() {
 
         if(correctGuessesrow3.join("") === randomWord.join("")) {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
-            
+            document.getElementById("playAgainBtn").style.display = "block"
         }
 
         document.getElementById("row3guess").style.display = "none"
@@ -282,7 +290,7 @@ function row4Guess() {
     || document.getElementById("row4letter3").value === ""
     || document.getElementById("row4letter4").value === ""
     ) {
-        window.alert("YOU NEED TO FILL THE FIRST ROW WITH A WORD")
+        window.alert("Please fill the row with a word")
     } else if(row1guess.length === 0) {
         window.alert("Please fill the previous rows")
     } else {
@@ -306,7 +314,7 @@ function row4Guess() {
             }
         })
 
-        console.log("ROW 1 GUESS", row4guess)
+        // console.log("ROW 1 GUESS", row4guess)
 
         
         for(let i = 0; i < correctGuessesrow4.length; i++) {
@@ -348,7 +356,7 @@ function row4Guess() {
 
         if(correctGuessesrow4.join("") === randomWord.join("")) {
             setTimeout(() => {window.alert("Congratualions! You found the CORRECT 4 letter word")}, 1600)
-            
+            document.getElementById("playAgainBtn").style.display = "block"
         }
 
         document.getElementById("row3guess").style.display = "none"
